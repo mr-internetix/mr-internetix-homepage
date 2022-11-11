@@ -6,14 +6,15 @@ import styled from '@emotion/styled'
 
 
 const LogoBox = styled.span`font-weight: bold;
-   font-size: 18px;
+   font-size: 28px;
     display: inline-flex;
    align-items: center;
-  height: 30px;
    line-height: 20px;
+   text-align:center;
   padding: 10px;
-  letter-spacing:1px;
- 
+  margin-bottom:10px;
+  cursor : pointer;
+  letter-spacing : 0.2px;
    img {                                                                      
      transition: 200ms ease;
      border-radius:50%
@@ -28,20 +29,23 @@ const LogoBox = styled.span`font-weight: bold;
 const Logo = () =>{
   const profileImg = `/images/profile-pic.png`
   return (
-   (<Link href="/">
+   <Link href="/" legacyBehavior>
 
-    <LogoBox>
-    {/* <Image src={profileImg} width={25} height={25}  alt="logo" /> */}
-    <Text
-    color={useColorModeValue('gray.800','whiteAlpha.900')}
-    fontFamily='M PLUS Rounded 1c , sans-serif'
-    fontWeight="bold"
-    ml={3}
-    > Mr Internetix 
-    </Text>
-    </LogoBox>
+     <LogoBox>
 
-   </Link>)
+     {/* <Image src={profileImg} width={25} height={25}  alt="logo" /> */}
+     <Text
+     color={useColorModeValue('gray.800','whiteAlpha.900')}
+     fontFamily='Roboto , sans-serif'
+     fontWeight="bold"
+     alignItems="center"
+     justifyContent="center"
+     ml={3}
+     > Mr Internetix
+     </Text>
+     </LogoBox>
+
+    </Link>
   ); 
 }
 

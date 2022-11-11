@@ -32,17 +32,16 @@ const Notfound = () => {
   }, [])
 
   return (
-    <Container mt={18}>
+    <Container>
       <Box id="lottie-container" ref={ref}></Box>
     
-      <Box my={6} align="center">
-        <NextLink href="/">
+      <Box align="center">
+        <NextLink href="/" legacyBehavior>
           <Button colorScheme="green"> Back To Home</Button>
         </NextLink>
       </Box>
-        <Divider my={6}/>
     </Container>
-  )
+  );
 }
 
 export default Notfound

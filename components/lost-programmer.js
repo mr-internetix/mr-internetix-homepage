@@ -52,7 +52,7 @@ const LostProgrammer = () => {
       setRenderer(renderer)
 
       
-      const scale = scH * 0.0001 +1.7
+      const scale = scH * 0.0001 +1.3
 
 
       const camera = new THREE.OrthographicCamera(
@@ -105,7 +105,6 @@ const LostProgrammer = () => {
       }
 
       return () => {
-        console.log('unmount')
         cancelAnimationFrame(req)
         renderer.dispose()
       }

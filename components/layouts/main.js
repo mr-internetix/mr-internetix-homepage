@@ -5,6 +5,7 @@ import Navbar from '../navbar'
 import Footer from '../footer';
 import LostProgrammerLoader from '../lost-programmer-loader'
 
+
 const LostProgrammer = dynamic(() => import('../lost-programmer'), {
   ssr: false,
   loading: () => <LostProgrammerLoader />
