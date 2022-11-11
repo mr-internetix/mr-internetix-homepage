@@ -1,6 +1,9 @@
 import { forwardRef } from 'react'
 import { Box, Spinner } from '@chakra-ui/react'
 
+
+// eslint-disable-next-line react/display-name
+
 export const ProgrammerSpinner = () => (
   <Spinner
     size="xl"
