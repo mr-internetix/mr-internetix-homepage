@@ -1,25 +1,48 @@
-import NextLink from 'next/link';
+import NextLink from 'next/link'
+import { useEffect, useRef } from 'react'
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  Heading,
+  Text
+} from '@chakra-ui/react'
+import notfound from '../public/images/not-found.json'
+import lottie from 'lottie-web/build/player/lottie_light'
 
-import { Box, Heading, Text, Container, Divider, Button } from '@chakra-ui/react';
+const Notfound = () => {
+  const ref = useRef()
+  const isSecond = useRef(false)
+  useEffect(() => {
 
+    if(isSecond.current == false) {
+      lottie.loadAnimation({
+        container: ref.current,
+        animationData: notfound,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+      })
 
-const NotFound = () => {
-    return (
-        <Container>
-            <Heading as="h1" mt={10}> Not Found </Heading>
-            <Text> Looks Like You&apos;re Lost</Text>
-            <Divider my={6} />
-            <Box my={6} align="center">
-                <NextLink href="/" legacyBehavior>
-                    <Button colorScheme="teal"> Show Me The Sign</Button>
-                </NextLink>
+      return () => {
+        isSecond.current = true
+      }
+    }
+  }, [])
 
-            </Box>
-        </Container>
-    );
+  return (
+    <Container mt={18}>
+      <Box id="lottie-container" ref={ref}></Box>
+    
+      <Box my={6} align="center">
+        <NextLink href="/">
+          <Button colorScheme="green"> Back To Home</Button>
+        </NextLink>
+      </Box>
+        <Divider my={6}/>
+    </Container>
+  )
 }
 
-
-
-
-export default NotFound
+export default Notfound
