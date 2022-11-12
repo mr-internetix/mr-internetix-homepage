@@ -17,7 +17,8 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub ,IoLogoLinkedin } from 'react-icons/io5'
+import { SiFiverr} from 'react-icons/si'
 
 
 
@@ -115,7 +116,7 @@ export default function Home() {
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @mr_internetix
+                Github
               </Button>
             </Link>
           </ListItem>
@@ -126,7 +127,7 @@ export default function Home() {
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >
-                @mr_internetix
+                Twitter
               </Button>
             </Link>
           </ListItem>
@@ -137,7 +138,30 @@ export default function Home() {
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                @mr-internetix
+                instagram
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://fiverr.com/mr_internetix" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={SiFiverr} />}
+              >
+                Fiverr
+              </Button>
+            </Link>
+          </ListItem>
+
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/mr-internetix/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
+              >
+                LinkedIn
               </Button>
             </Link>
           </ListItem>
