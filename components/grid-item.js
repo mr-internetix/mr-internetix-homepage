@@ -28,6 +28,8 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
         <Image
           src={thumbnail}
           alt={title}
+          width="440"
+          height="440"
           className="grid-item-thumbnail"
           // placeholder="blur"
         />

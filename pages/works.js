@@ -5,12 +5,11 @@ import { WorkGridItem } from '../components/grid-item'
 
 
 // importing images for the works
-import bookShelf from '../public/images/works/bookshelf.gif'
-import fileSync from '../public/images/works/filesync.gif'
-import rpcleaners from '../public/images/works/rpcleaners.png'
-import zenfit from '../public/images/works/zenfit.gif'
-import qrgen  from '../public/images/works/qr-gen.gif'
-
+const  bookShelf = "https://ik.imagekit.io/kv6tcjdna/bookshelf.gif/tr:w-440,h-440"
+const fileSync  = "https://ik.imagekit.io/kv6tcjdna/filesync.gif/tr:w-440,h-440"
+const  rpcleaners = 'https://ik.imagekit.io/kv6tcjdna/rpcleaners_1_.png/tr:w-440,h-228'
+const zenfit = "https://ik.imagekit.io/kv6tcjdna/zenfit.gif/tr:w-440,h-440"
+const qrgen = "https://ik.imagekit.io/kv6tcjdna/qr-gen.gif/tr:w-440,h-440"
 
 const Works = () => (
   
