@@ -8,6 +8,11 @@ const nextConfig = {
         hostname: 'ik.imagekit.io',
         pathname: '/kv6tcjdna/**',
       },
+      {
+        protocol : 'https',
+        hostname : 'github-readme-stats.vercel.app',
+        pathname:'**'
+      }
     ],
   },
 }

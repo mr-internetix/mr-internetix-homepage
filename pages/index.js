@@ -22,8 +22,8 @@ import { SiFiverr} from 'react-icons/si'
 
 
 
-
 export default function Home() {
+
   return (
     <Layout>
     <Container>
@@ -108,7 +108,7 @@ export default function Home() {
         <Heading as="h3" variant="section-title">
           Find me on the web
         </Heading>
-        <List>
+        <List display="flex" flexWrap="wrap">
           <ListItem>
            <Link href="https://github.com/mr-internetix" target="_blank">
               <Button
@@ -168,15 +168,24 @@ export default function Home() {
         </List>
 
 
-        <Box align="center" my={4}>
+        
+      </Section>
+      <Heading as="h3" variant="section-title"> Github Stats
+        </Heading>
+      <Box align="center" my={8}>
+      
+         
+      <Image src="https://github-readme-stats.vercel.app/api?username=mr-internetix&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=151515" alt="languages" />
+      {/* <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-internetix&theme=tokyonight&langs_count=100" alt="languages" /> */}
+      </Box>
+
+      <Box align="center" my={4}>
           <NextLink href="/works" legacyBehavior>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
              My Works 
             </Button>
           </NextLink>
         </Box>
-      </Section>
-
   </Container>
   </Layout>
   );
