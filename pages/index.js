@@ -88,6 +88,10 @@ export default function Home() {
           <BioYear>2022</BioYear>
           Completed the Bachelor&apos;s Program in Computer Science at Mumbai University
             </BioSection>
+            <BioSection>
+          <BioYear>2022</BioYear>
+          Worked as Full Stack Developer ( Intern )
+        </BioSection>
         <BioSection>
           <BioYear>2022 to present</BioYear>
           Works as a freelance
@@ -112,8 +116,8 @@ export default function Home() {
         <Heading as="h3" variant="section-title">
           Find me on the web
         </Heading>
-        <List display="flex" flexWrap="wrap">
-          <ListItem>
+        <List display="flex" flexWrap="wrap" >
+          <ListItem w={{base:"50%" ,sm:"fit-content"} }>
            <Link href="https://github.com/mr-internetix" target="_blank">
               <Button
                 variant="ghost"
@@ -124,7 +128,7 @@ export default function Home() {
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          <ListItem w={{base:"50%" ,sm:"fit-content"} }>
             <Link href="https://twitter.com/mr_internetix" target="_blank">
               <Button
                 variant="ghost"
@@ -135,7 +139,7 @@ export default function Home() {
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          <ListItem w={{base:"50%" ,sm:"fit-content"} }>
             <Link href="https://instagram.com/mr_internetix" target="_blank">
               <Button
                 variant="ghost"
@@ -146,7 +150,7 @@ export default function Home() {
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          <ListItem w={{base:"50%" ,sm:"fit-content"} }>
             <Link href="https://fiverr.com/mr_internetix" target="_blank">
               <Button
                 variant="ghost"
@@ -158,7 +162,7 @@ export default function Home() {
             </Link>
           </ListItem>
 
-          <ListItem>
+          <ListItem w={{base:"50%" ,sm:"fit-content"} }>
             <Link href="https://www.linkedin.com/in/mr-internetix/" target="_blank">
               <Button
                 variant="ghost"
