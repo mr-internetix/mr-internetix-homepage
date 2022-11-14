@@ -37,7 +37,7 @@ export default function Home() {
           <Heading as="h2" variant="page-title">
             Ajit Yadav
           </Heading>
-          <p>Just A Nerd ( Developer / Designer )</p>
+          <p>Full Stack Developer ( Always a learner )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -98,14 +98,14 @@ export default function Home() {
         <Heading as="h3" variant="section-title">
           Technologies & Languages ♥
         </Heading>
-        <Paragraph>
+
 
          
           <Technologies/>
           
           
           
-        </Paragraph>
+
       </Section>
 
       <Section delay={0.3}>
