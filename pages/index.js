@@ -19,6 +19,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub ,IoLogoLinkedin } from 'react-icons/io5'
 import { SiFiverr} from 'react-icons/si'
+import {MdEmail} from 'react-icons/md'
 import Technologies  from '../components/technologies'
 
 
@@ -37,7 +38,7 @@ export default function Home() {
           <Heading as="h2" variant="page-title">
             Ajit Yadav
           </Heading>
-          <p>Full Stack Developer ( Always a learner )</p>
+          <p><strike>Inquisitive </strike>Full Stack Developer </p>
         </Box>
         <Box
           flexShrink={0}
@@ -146,7 +147,7 @@ export default function Home() {
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                instagram
+                Instagram
               </Button>
             </Link>
           </ListItem>
@@ -170,6 +171,17 @@ export default function Home() {
                 leftIcon={<Icon as={IoLogoLinkedin} />}
               >
                 LinkedIn
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem w={{base:"50%" ,sm:"fit-content"} }>
+            <Link href="mailto:yadavajit8916@gmail.com">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={MdEmail} />}
+              >
+                Email
               </Button>
             </Link>
           </ListItem>
