@@ -19,6 +19,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub ,IoLogoLinkedin } from 'react-icons/io5'
 import { SiFiverr} from 'react-icons/si'
+import Technologies  from '../components/technologies'
+
 
 
 
@@ -94,13 +96,15 @@ export default function Home() {
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Technologies & Languages ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="www.github.com/mr-internetix" target="_blank">
-           Coding
-          </Link>
+
+         
+          <Technologies/>
+          
+          
+          
         </Paragraph>
       </Section>
 
