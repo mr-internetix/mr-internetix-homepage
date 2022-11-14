@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='600' height='600' viewBox='0 0 150 150'>
+<filter id='i' x='0' y='0'>
+	<feColorMatrix type='matrix' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0 0' />
+</filter>
+<filter id='n' x='0' y='0'>
+	<feTurbulence type='turbulence' baseFrequency='.7' result='fuzz' numOctaves='2' stitchTiles='stitch'/>
+	<feComposite in='SourceGraphic' in2='fuzz' operator='arithmetic' k1='0' k2='1' k3='-73' k4='.01' />
+</filter>
+<rect width='102%' height='102%' fill='#03031a'/>
+<rect x='-1%' y='-1%' width='102%' height='102%' fill='#ffffff' filter='url(#n)' opacity='1'/>
+<rect x='-1%' y='-1%' width='102%' height='102%' fill='#03031a' filter='url(#i)' opacity='1'/>
+</svg>
