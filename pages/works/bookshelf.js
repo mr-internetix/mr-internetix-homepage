@@ -5,19 +5,19 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="File Sync">
+  <Layout title="Book Shelf">
     <Container mt={36}>
       <Title>
-        File Sync <Badge>Feb-2022</Badge>
+        BookShelf <Badge> Sept-2021</Badge>
       </Title>
       <P>
-      File sharing web platform -- stores data and helps to share data over internet without any email also encrypt PDF with password
+    A book Selling platform Where Users can post Post Ad&apos;s and manage Them Through Dashboard
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://file-sync.herokuapp.com" target='_blank'>
-          https://file-sync.herokuapp.com<ExternalLinkIcon mx="2px" />
+          <Link href="https://bookshelf-app-68.herokuapp.com/" target='_blank'>
+          https://bookshelf-app-68.herokuapp.com/<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -26,14 +26,15 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Express js , MongoDB , Ejs , Firebase</span>
+          <span>NodeJS, Express js ,Ejs </span>
         </ListItem>
       </List>
 
-      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/filesync.png" alt="file Sync" />
-      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/filesync2_zSU3j0Vbq" alt="file Sync" />
+      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/bookshelf.png" alt="Qr gen" />
+     
     </Container>
   </Layout>
 )
 
 export default Work
+

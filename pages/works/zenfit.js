@@ -8,16 +8,16 @@ const Work = () => (
   <Layout title="File Sync">
     <Container mt={36}>
       <Title>
-        File Sync <Badge>Feb-2022</Badge>
+        Zenfit <Badge> Sept-2022</Badge>
       </Title>
       <P>
-      File sharing web platform -- stores data and helps to share data over internet without any email also encrypt PDF with password
+     A gym Management Portal For Managing gym Members With User Interface and Multi Vendor functionality 
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://file-sync.herokuapp.com" target='_blank'>
-          https://file-sync.herokuapp.com<ExternalLinkIcon mx="2px" />
+          <Link href="https://orca-app-oobog.ondigitalocean.app/" target='_blank'>
+          https://orca-app-oobog.ondigitalocean.app/<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -26,12 +26,12 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Express js , MongoDB , Ejs , Firebase</span>
+          <span>NodeJS, Express js , MongoDB , Ejs , Jwt, Twilio</span>
         </ListItem>
       </List>
 
-      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/filesync.png" alt="file Sync" />
-      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/filesync2_zSU3j0Vbq" alt="file Sync" />
+      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/gym.png" alt="Zenfit" />
+      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/gym2.png" alt="Zenfit" />
     </Container>
   </Layout>
 )

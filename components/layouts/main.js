@@ -21,6 +21,8 @@ const LostProgrammer = dynamic(() => import('../lost-programmer'), {
                 <LostProgrammer />
                     {children}
                 </Container>
+
+                <Footer/>
                 
             </Box>
     )

@@ -5,19 +5,19 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="File Sync">
+  <Layout title="Qr Gen">
     <Container mt={36}>
       <Title>
-        File Sync <Badge>Feb-2022</Badge>
+        Qr Gen <Badge> Aug-2022</Badge>
       </Title>
       <P>
-      File sharing web platform -- stores data and helps to share data over internet without any email also encrypt PDF with password
+     A V-Card Qr Code Generator which helps to save contact Details by Scanning The Qr Code
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://file-sync.herokuapp.com" target='_blank'>
-          https://file-sync.herokuapp.com<ExternalLinkIcon mx="2px" />
+          <Link href="https://vcard-qr-code.herokuapp.com/" target='_blank'>
+          https://vcard-qr-code.herokuapp.com/<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -26,14 +26,15 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Express js , MongoDB , Ejs , Firebase</span>
+          <span>NodeJS, Express js ,Ejs </span>
         </ListItem>
       </List>
 
-      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/filesync.png" alt="file Sync" />
-      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/filesync2_zSU3j0Vbq" alt="file Sync" />
+      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/qrcode.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668395712543" alt="Qr gen" />
+     
     </Container>
   </Layout>
 )
 
 export default Work
+

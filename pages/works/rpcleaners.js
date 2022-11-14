@@ -5,19 +5,19 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="File Sync">
+  <Layout title="Rp cleaners">
     <Container mt={36}>
       <Title>
-        File Sync <Badge>Feb-2022</Badge>
+        Rp Cleaners <Badge> Dec-2021</Badge>
       </Title>
       <P>
-      File sharing web platform -- stores data and helps to share data over internet without any email also encrypt PDF with password
+   A Portfolio Website for  a local business
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://file-sync.herokuapp.com" target='_blank'>
-          https://file-sync.herokuapp.com<ExternalLinkIcon mx="2px" />
+          <Link href="https://www.rpcleaners.in" target='_blank'>
+          www.rpcleaners.in<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -26,14 +26,15 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Express js , MongoDB , Ejs , Firebase</span>
+          <span>HTML , Css , Bootstrap , Javascript </span>
         </ListItem>
       </List>
 
-      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/filesync.png" alt="file Sync" />
-      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/filesync2_zSU3j0Vbq" alt="file Sync" />
+      <WorkImage src="https://ik.imagekit.io/kv6tcjdna/rpcleaners_1_.png/tr:w-440,h-228" alt="Qr gen" />
+     
     </Container>
   </Layout>
 )
 
 export default Work
+
