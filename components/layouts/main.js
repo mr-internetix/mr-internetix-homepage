@@ -4,6 +4,7 @@ import Header from '../head'
 import Navbar from '../navbar'
 import Footer from '../footer';
 import LostProgrammerLoader from '../lost-programmer-loader'
+import GalaxyAnimation from '../galaxyanimation';
 
 
 const LostProgrammer = dynamic(() => import('../lost-programmer'), {
@@ -14,17 +15,23 @@ const LostProgrammer = dynamic(() => import('../lost-programmer'), {
  const Main = ({children , router })=>{
 
     return(
+        
             <Box as="main" pb={8}>
                 <Header/>
                 <Navbar/>
                 <Container maxW="container.md" pt={14}>
+                <GalaxyAnimation/>   
                 <LostProgrammer />
+
                     {children}
+                    
                 </Container>
+                
 
                 <Footer/>
                 
             </Box>
+           
     )
 }
 
